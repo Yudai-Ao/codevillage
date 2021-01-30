@@ -1,0 +1,48 @@
+.menu-wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    @include tab {
+            flex-wrap: wrap;
+        }
+    .menu-item {
+        text-align: center;
+        width: 25%;
+        box-sizing: border-box;
+        @include tab {
+            width: 100%;
+            &:nth-child(2),
+            &:nth-child(3) {
+                margin-top: 60px;
+            }
+        }
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.menu-content {
+    padding: 0 10px;
+    box-sizing: border-box;
+    h3 {
+        font-size: 3rem;
+        letter-spacing: 0.1;
+        margin: 35px;
+        @include tab {
+           font-weight: bold;
+           text-align: left;
+        }
+    }
+    p {
+        
+        font-size: 1.6rem;
+        letter-spacing: 0.1;
+        text-align: left;
+    }
+    .menu-price {
+        text-align: right;
+        margin-top: 34px;
+    }
+} 
